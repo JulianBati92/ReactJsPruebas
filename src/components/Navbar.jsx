@@ -3,6 +3,8 @@ import { BiCart } from 'react-icons/bi';
 import CartWidget from './CartWidget'; // Importa CartWidget
 
 function Navbar() {
+  const numeroDeItemsEnCarrito = 5;
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="#">TuMatteoli</a>
@@ -40,7 +42,7 @@ function Navbar() {
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="nav-link" href="#">
-              <BiCart className="cart-icon" /> Chango
+              <BiCart className="cart-icon" /> {numeroDeItemsEnCarrito}
             </a>
           </li>
         </ul>
