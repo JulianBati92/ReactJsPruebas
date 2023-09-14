@@ -1,13 +1,13 @@
 import React from 'react';
 import { BiCart } from 'react-icons/bi';
-import CartWidget from './CartWidget'; // Importa CartWidget
+import CartWidget from './CartWidget'; 
 
 function Navbar() {
   const numeroDeItemsEnCarrito = 5;
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">TuMatteoli</a>
+      <a className="navbar-brand" href="#">Tu Matteoli</a>
       <button
         className="navbar-toggler"
         type="button"
@@ -47,6 +47,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <CartWidget />
     </nav>
   );
 }
